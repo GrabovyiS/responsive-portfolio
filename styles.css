@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  background-color: white;
+  --heading-color: #42446e;
+  --dark-content-color: #666666;
+}
+
+nav a {
+  font-family: "DM Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 58px;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  color: var(--heading-color);
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+p.subheading {
+  text-align: center;
+  color: var(--dark-content-color);
+  font-size: 32px;
+  margin-bottom: 96px;
+}
+
+header,
+main,
+footer {
+  max-width: 1920px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+@media screen and (width <= 1160px) {
+  header,
+  main,
+  footer {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+}
+
+@media screen and (width < 600px) {
+  header,
+  main,
+  footer {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+section.tech-stack {
+  margin-bottom: 200px;
+
+  .subheading {
+    margin-bottom: 140px;
+  }
+
+  .tech-stack-images {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a {
+    transition: transform 0.4s ease;
+
+    img {
+      height: 120px;
+      width: 120px;
+    }
+  }
+
+  a:hover {
+    transform: scale(1.15);
+  }
+}
+
+@media screen and (width < 600px) {
+  section.tech-stack {
+    a img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+section.projects {
+  margin-bottom: 200px;
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .project-card {
+      max-width: 375px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 100px 0px #00000033;
+
+      .text-content-container {
+        padding: 28px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+
+      p.main-card-text {
+        color: var(--dark-content-color);
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 16px;
+      }
+
+      .card-tech-stack {
+        color: #43446e;
+        margin-bottom: 24px;
+
+        .tech-stack-prefix {
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .tech-stack-content {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 48px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          border-radius: 0;
+        }
+
+        a {
+          display: flex;
+          gap: 10px;
+          color: black;
+          text-decoration: underline;
+          &:visited {
+            color: black;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+  }
+}

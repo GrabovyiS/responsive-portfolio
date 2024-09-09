@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Developer portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tech Stack</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <div class="social-media-links"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>
+          Hi 👋, My name is <span class="hero-gradient-text">Pavan MG</span> I
+          build things for web
+        </h1>
+        <div class="hero-image"></div>
+      </section>
+
+      <section class="tech-stack">
+        <h2>My Tech Stack</h2>
+        <p class="subheading">Technologies I’ve been working with recently</p>
+        <div class="tech-stack-images">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/HTML5">
+            <img
+              src="./assets/tech-stack-icons/html.svg"
+              alt="HTML5"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/CSS">
+            <img
+              src="./assets/tech-stack-icons/css.svg"
+              alt="CSS3"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          >
+            <img
+              src="./assets/tech-stack-icons/js.svg"
+              alt="JavaScript"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://react.dev/">
+            <img
+              src="./assets/tech-stack-icons/react.svg"
+              alt="React"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://redux.js.org/">
+            <img
+              src="./assets/tech-stack-icons/redux.svg"
+              alt="Redux"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://getbootstrap.com/">
+            <img
+              src="./assets/tech-stack-icons/bootstrap.svg"
+              alt="Bootstrap"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://tailwindcss.com/">
+            <img
+              src="./assets/tech-stack-icons/tailwind.svg"
+              alt="Tailwind"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://sass-lang.com/">
+            <img
+              src="./assets/tech-stack-icons/sass.svg"
+              alt="Sass"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://git-scm.com/">
+            <img
+              src="./assets/tech-stack-icons/git.svg"
+              alt="Git"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://gsap.com/">
+            <img
+              src="./assets/tech-stack-icons/greensock.svg"
+              alt="GreenSock"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://code.visualstudio.com/">
+            <img
+              src="./assets/tech-stack-icons/vscode.svg"
+              alt="VSCode"
+              width="120"
+              height="120"
+            />
+          </a>
+          <a target="_blank" href="https://github.com/">
+            <img
+              src="./assets/tech-stack-icons/github.svg"
+              alt="GitHub"
+              width="120"
+              height="120"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <p class="subheading">Things I've built so far</p>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <!-- The images are purely decorative so alt attribute should be empty -->
+            <img src="./assets/project-pictures/project1.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/project-pictures/project2.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/project-pictures/project3.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/project-pictures/project4.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/project-pictures/project5.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/project-pictures/project6.jpg" alt="" />
+            <div class="text-content-container">
+              <h3>Project Tile goes here</h3>
+              <p class="main-card-text">
+                This is sample project description random things are here in
+                description This is sample project lorem ipsum generator for
+                dummy content
+              </p>
+              <p class="card-tech-stack">
+                <span class="tech-stack-prefix">Tech stack :</span>
+                <span class="tech-stack-content"
+                  >HTML , JavaScript, SASS, React</span
+                >
+              </p>
+              <div class="links">
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/icons/link-chain.svg" alt="" />
+                  <p>Live Preview</p>
+                </a>
+                <a target="_blank" href="https://github.com/GrabovyiS">
+                  <img src="assets/tech-stack-icons/github.svg" alt="GitHub" />
+                  <p>View Code</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="top-footer">
+        <div class="logo"></div>
+        <p> +91 12345 09876</p>
+        <p>info@example.com</p>
+        <div class="social-media-links"></div>
+      </div>
+      <hr />
+      <div class="bottom-footer">
+        <nav>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+        <p class="designed-by">
+          Designed and built by
+          <span class="pavan-gradient">Pavan MG</span> with
+          <span class="love-gradient">Love</span> &
+          <span class="coffee-gradient">Coffee</span>
+        </p>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
