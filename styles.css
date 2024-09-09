@@ -19,10 +19,16 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 h1 {
   color: var(--heading-color);
   font-size: 58px;
   font-weight: 700;
+  line-height: 70px;
+  margin: 0;
 }
 
 h2 {
@@ -62,6 +68,103 @@ footer {
   footer {
     margin-left: 16px;
     margin-right: 16px;
+  }
+}
+
+.social-media-links {
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 30px;
+    width: 30px;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 6px;
+  gap: 56px;
+  a {
+    color: var(--dark-content-color);
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease;
+    &.text-link:hover {
+      border-bottom-color: var(--dark-content-color);
+    }
+  }
+}
+
+@media screen and (1160px < width < 1300px), screen and (width < 1060px) {
+  nav ul {
+    gap: 30px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 220px;
+}
+
+@media screen and (width < 940px) {
+  header nav ul {
+  }
+}
+
+section.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 220px;
+  margin-bottom: 330px;
+
+  .hero-gradient-text {
+    background: linear-gradient(90deg, #13b0f5 -0.08%, #ca24b4 63.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  img {
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (width < 1350px) {
+  section.hero {
+    gap: 100px;
+    margin-bottom: 128px;
+    img {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (width < 950px) {
+  section.hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 64px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (width < 400px) {
+  section.hero img {
+    width: 100%;
   }
 }
 
@@ -115,6 +218,11 @@ section.projects {
       max-width: 375px;
       border-radius: 20px;
       box-shadow: 2px 2px 100px 0px #00000033;
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+      &:hover {
+        box-shadow: 2px 2px 100px 0px #0000006a;
+        transform: scale(1.01);
+      }
 
       .text-content-container {
         padding: 28px;
@@ -153,12 +261,6 @@ section.projects {
         display: flex;
         gap: 48px;
 
-        img {
-          width: 20px;
-          height: 20px;
-          border-radius: 0;
-        }
-
         a {
           display: flex;
           gap: 10px;
@@ -166,6 +268,17 @@ section.projects {
           text-decoration: underline;
           &:visited {
             color: black;
+          }
+
+          transition: transform 0.2s ease;
+          &:hover {
+            transform: scale(1.03);
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+            border-radius: 0;
           }
         }
       }
@@ -175,6 +288,74 @@ section.projects {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
       }
+    }
+  }
+}
+
+footer {
+  margin-bottom: 60px;
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: var(--heading-color);
+      font-family: "DM Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .content-container {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 2px solid #d1d1d1;
+    margin-top: 42px;
+    margin-bottom: 60px;
+  }
+
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav ul {
+      gap: 52px;
+      a {
+        color: var(--heading-color);
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    .designed-by {
+      color: var(--dark-content-color);
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .pavan-text-gradient {
+      background: linear-gradient(90deg, #7268d3, #9a4ac6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .love-text-gradient {
+      background: linear-gradient(90deg, #9a4ac6, #c12cb7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .coffee-text-gradient {
+      background: linear-gradient(90deg, #cc23b4, #e611aa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
