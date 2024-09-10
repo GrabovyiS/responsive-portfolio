@@ -45,6 +45,20 @@ p.subheading {
   margin-bottom: 96px;
 }
 
+@media screen and (width < 600px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+
+  p.subheading {
+    font-size: 28px;
+    margin-bottom: 64px;
+  }
+}
+
 header,
 main,
 footer {
@@ -242,9 +256,17 @@ section.tech-stack {
 
 @media screen and (width < 600px) {
   section.tech-stack {
+    p.subheading {
+      margin-bottom: 64px;
+    }
+
+    .tech-stack-images {
+      gap: 64px;
+    }
+
     a img {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
     }
   }
 }
