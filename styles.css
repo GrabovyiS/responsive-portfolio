@@ -404,10 +404,13 @@ footer {
     nav ul {
       flex-wrap: wrap;
       gap: 52px;
-      a {
+      a.text-link {
         color: var(--heading-color);
         font-size: 18px;
         font-weight: 400;
+        &:hover {
+          border-bottom-color: var(--heading-color);
+        }
       }
     }
 
