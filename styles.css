@@ -85,7 +85,6 @@ nav ul {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 6px;
   gap: 56px;
   a {
     color: var(--dark-content-color);
@@ -112,6 +111,16 @@ header {
   justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 220px;
+
+  nav ul {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (width < 900px) {
+  header {
+    margin-bottom: 128px;
+  }
 }
 
 @media screen and (width < 940px) {
@@ -154,7 +163,6 @@ section.hero {
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    margin-bottom: 64px;
 
     h1 {
       text-align: center;
@@ -193,6 +201,12 @@ section.tech-stack {
 
   a:hover {
     transform: scale(1.15);
+  }
+}
+
+@media screen and (width < 900px) {
+  section.tech-stack {
+    margin-bottom: 128px;
   }
 }
 
@@ -292,12 +306,19 @@ section.projects {
   }
 }
 
+@media screen and (width < 900px) {
+  section.projects {
+    margin-bottom: 100px;
+  }
+}
+
 footer {
   margin-bottom: 60px;
 
   .top-footer {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 
     p {
       color: var(--heading-color);
@@ -309,6 +330,7 @@ footer {
     .content-container {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 48px;
     }
   }
@@ -324,8 +346,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 
     nav ul {
+      flex-wrap: wrap;
       gap: 52px;
       a {
         color: var(--heading-color);
@@ -357,5 +382,48 @@ footer {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+}
+
+@media screen and (width < 700px) {
+  footer .bottom-footer nav ul {
+    gap: 30px;
+  }
+}
+
+@media screen and (width < 660px) {
+  footer .top-footer {
+    flex-direction: column;
+    align-items: center;
+
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .social-media-links {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (width < 425px) {
+  footer .top-footer {
+    align-items: start;
+
+    .content-container {
+      align-items: start;
+    }
+
+    .social-media-links {
+      justify-content: start;
+    }
+  }
+}
+
+@media screen and (width < 500px) {
+  footer .bottom-footer nav ul {
+    gap: 16px;
   }
 }
